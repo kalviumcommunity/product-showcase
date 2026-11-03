@@ -1,23 +1,27 @@
+
 import Greeting from "./components/Greeting";
 import ProductCard from "./components/ProductCard";
 
-export default function Page() {
+export default function Home() {
   return (
-    <main className="store">
+    <main>
       <h1>My Product Store</h1>
 
-      {/* TODO: once Greeting takes a `name` prop, pass one here:
-          <Greeting name="Shopper" /> */}
-      <Greeting />
+      <Greeting name="Dattathreya" />
 
-      <div className="cards">
-        {/* TODO: reuse ProductCard at least TWICE with DIFFERENT data.
-            Remember: numbers and booleans are passed in braces.
-            <ProductCard title="Keyboard" price={49} inStock={true} />
-            <ProductCard title="Mouse"    price={25} inStock={false} /> */}
-        <ProductCard />
-        <ProductCard />
-      </div>
+      <h2>Our Products</h2>
+
+      <ProductCard
+        title="Keyboard"
+        price={999}
+        inStock={true}
+      />
+
+      <ProductCard
+        title="Wireless Mouse"
+        price={499}
+        inStock={false}
+      />
     </main>
   );
 }
