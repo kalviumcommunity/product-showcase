@@ -1,7 +1,10 @@
 // TODO 1: Declare a props type with an `amount: number` field.
-// TODO 2: Give this component a typed, destructured parameter: ({ amount }: Props)
-// TODO 3: Render the amount inside the JSX with curly braces, e.g. ${amount}
+type PriceTagProps = {
+  amount: number;
+};
 
-export default function PriceTag() {
-  return <span className="todo">$?.??</span>;
+// TODO 2: Give this component a typed, destructured paramater: ({ amount }: Props)
+export default function PriceTag({ amount }: PriceTagProps) {
+  // TODO 3: Render the amount inside the JSX with curly braces
+  return <span className="todo">${amount}</span>;
 }
