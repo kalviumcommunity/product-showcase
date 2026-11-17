@@ -50,6 +50,7 @@ Follow the `// TODO` comments in each file.
 4. **Reuse with variety.** In `app/page.tsx`, pass a `name` to `Greeting` and render `ProductCard` at least twice with different data. Numbers and booleans go **in braces**: `price={49} inStock={true}`.
 
 ## What to submit 📸
+i have submitted
 
 Upload these screenshots:
 
