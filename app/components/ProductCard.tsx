@@ -6,11 +6,20 @@
 //         Tip: reuse your <PriceTag /> for the price, and show
 //         "In stock" / "Sold out" based on inStock.
 
-export default function ProductCard() {
+import PriceTag from './PriceTag';
+
+type Props = {
+  title: string;
+  price: number;
+  inStock: boolean;
+};
+
+export default function ProductCard({ title, price, inStock }: Props) {
   return (
     <div className="card">
-      <h3 className="todo">TODO: product title</h3>
-      <p className="todo">show price + stock status</p>
+      <h3>{title}</h3>
+      <PriceTag price={price} />
+      <p>{inStock ? 'In stock' : 'Sold out'}</p>
     </div>
   );
 }
